@@ -1,7 +1,6 @@
 var path = require('path')
 
 module.exports = function(app) {
-	// console.log('___ENTER htmlRoutes.js___');
 
 	// Home page
 	app.get('/', function(req, res) {

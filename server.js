@@ -1,11 +1,10 @@
 const express = require('express')
 const app = express()
-const htmlroute = require('./app/routing/htmlRoutes')
-const friendroute = require('./app/routing/friends.js')
+const path = require('path')
+const bodyParser = require('body-parser')
 
 app.use(express.static(path.join(__dirname, './app/public')));
-app.use(htmlroute)
-app.use(friendroute)
+require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
