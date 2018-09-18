@@ -63,4 +63,4 @@ var allpokemon = [{
       ]
   }
 ]
-  
+module.exports = allpokemon;

@@ -22,50 +22,63 @@
         <form id="send">
             <div class="form-group">
                 <label for="study">A test is coming up how do you study for it?</label>
-                <select class="form-control" id="study">
-                    <option>1 - Not at all</option>
-                    <option>2 - Maybe a little</option>
-                    <option>3 - Enough to get by</option>
-                    <option>4 - I put a lot of time in</option>
-                    <option>5 - All day with no break!</option>
+                <select class="form-control" id="study" name="study">
+                    <option value='1'>Not at all</option>
+                    <option value='2'>Maybe a little</option>
+                    <option value='3'>Enough to get by</option>
+                    <option value='4'>I put a lot of time in</option>
+                    <option value='5'>All day with no break!</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="critism">How do you react to Critism?</label>
-                <select class="form-control" id="critism">
-                    <option>1 - I don't care!</option>
-                    <option>2 - I kinda care.</option>
-                    <option>3 - It bother me.</option>
-                    <option>4 - It really bothers me!</option>
-                    <option>5 - I break down in tears!</option>
+                <select class="form-control" id="critism" name="critism">
+                    <option value='1'>I don't care!</option>
+                    <option value='2'>I kinda care.</option>
+                    <option value='3'>It bother me.</option>
+                    <option value='4'>It really bothers me!</option>
+                    <option value='5'>I break down in tears!</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="brave">Are you a brave person?</label>
-                <select class="form-control" id="brave">
-                    <option>1 - I hide under my covers at night.</option>
-                    <option>2 - I try to be brave?</option>
-                    <option>3 - About the same as the next guy.</option>
-                    <option>4 - I am a brave person!</option>
-                    <option>5 - I would take on anything!</option>
+                <select class="form-control" id="brave" name="brave">
+                    <option value='1'>I hide under my covers at night.</option>
+                    <option value='2'>I try to be brave?</option>
+                    <option value='3'>About the same as the next guy.</option>
+                    <option value='4'>I am a brave person!</option>
+                    <option value='5'>I would take on anything!</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="plan">Do you plan everything?</label>
-                <select class="form-control" id="plan">
-                    <option>1 - I plan my meals three weeks in advance!</option>
-                    <option>2 - I have been known to overplan.</option>
-                    <option>3 - I plan as much as anyone should.</option>
-                    <option>4 - I only plan the big things!</option>
-                    <option>5 - Whats a plan?</option>
+                <select class="form-control" id="plan" name="plan">
+                    <option value='1'>I plan my meals three weeks in advance!</option>
+                    <option value='2'>I have been known to overplan.</option>
+                    <option value='3'>I plan as much as anyone should.</option>
+                    <option value='4'>I only plan the big things!</option>
+                    <option value='5'>Whats a plan?</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="loadMe" tabindex="-1" role="dialog" aria-labelledby="loadMeLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="loader"></div>
+                    <div clas="loader-txt">
+                        <p>Finding your Pokemon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
