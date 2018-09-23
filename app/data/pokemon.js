@@ -1,64 +1,65 @@
 var allpokemon = [{
     "name":"Bulbasaur",
-    "photo":"",
+    "photo":"./images/Bulbasaur.png",
     "scores":[
         5,
+        2,
+        4,
         1,
-        4,
-        4,
         5,
         1,
         2,
-        5,
+        3,
         4,
         1
       ]
   },
   {
     "name":"Squirtle",
-    "photo":"",
+    "photo":"./images/Squirtle.png",
+    "description": '',
     "scores":[
         5,
         1,
-        4,
-        4,
+        1,
         5,
+        2,
         1,
         2,
-        5,
+        1,
         4,
         1
       ]
   },
   {
     "name":"Charmander",
-    "photo":"",
+    "photo":"./images/Charmander.png",
     "scores":[
-        5,
         1,
+        5,
         4,
-        4,
+        3,
         5,
         1,
         2,
-        5,
+        3,
         4,
         1
       ]
   },
   {
     "name":"Pikachu",
-    "photo":"",
+    "photo":"./images/pikachu.png",
     "scores":[
-        5,
+        3,
         1,
         4,
-        4,
-        5,
+        1,
+        3,
         1,
         2,
         5,
-        4,
+        1,
         1
       ]
   }

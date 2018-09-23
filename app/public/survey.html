@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -31,7 +33,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="critism">How do you react to Critism?</label>
+                <label for="critism">How do you react to critism?</label>
                 <select class="form-control" id="critism" name="critism">
                     <option value='1'>I don't care!</option>
                     <option value='2'>I kinda care.</option>
@@ -60,18 +62,80 @@
                     <option value='5'>Whats a plan?</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="vacation">What is your perfect vacation?</label>
+                <select class="form-control" id="vacation" name="vacation">
+                    <option value='1'>Relaxing on a beach.</option>
+                    <option value='2'>Skiing in the french alps.</option>
+                    <option value='3'>Hiking in rocky mountains.</option>
+                    <option value='4'>Hanging out with friends at home.</option>
+                    <option value='5'>I don't take vacations.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="social">Do you enjoy social gatherings?</label>
+                <select class="form-control" id="social" name="social">
+                    <option value='1'>I love people, and I'll talk to everyone!</option>
+                    <option value='2'>I like them but not all the time.</option>
+                    <option value='3'>They are fine once in a while.</option>
+                    <option value='4'>I try to avoid them.</option>
+                    <option value='5'>I get anxiety just thinking about it!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="argue">Do you argue with people often?</label>
+                <select class="form-control" id="argue" name="argue">
+                    <option value='1'>Every other conversation is an argument.</option>
+                    <option value='2'>I disagree with people more than I should.</option>
+                    <option value='3'>Occasionally.</option>
+                    <option value='4'>I perfer not to but I sometimes do.</option>
+                    <option value='5'>Never!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="confront">How do you deal with confrontation?</label>
+                <select class="form-control" id="confront" name="confront">
+                    <option value='1'>I don't back down from anyone!</option>
+                    <option value='2'>Ibut I don't go looking for a fight.</option>
+                    <option value='3'>I try to stick up for myself.</option>
+                    <option value='4'>I only deal with stuff if I have to.</option>
+                    <option value='5'>I run away and hide!</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="element">Which of the elements are you?</label>
+                <select class="form-control" id="element" name="element">
+                    <option value='1'>Fire</option>
+                    <option value='2'>Water</option>
+                    <option value='3'>Earth</option>
+                    <option value='4'>Air</option>
+                    <option value='5'>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plan">Are you an easy-going person?</label>
+                <select class="form-control" id="test5" name="test4">
+                    <option value='1'>I am most relaxed person ever!</option>
+                    <option value='2'>I think I am easy-going</option>
+                    <option value='3'>I am but I am serious normally.</option>
+                    <option value='4'>I am more serious and uptight</option>
+                    <option value='5'>No at all!</option>
+                </select>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="loadMe" tabindex="-1" role="dialog" aria-labelledby="loadMeLabel">
-        <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body text-center">
-                    <div class="loader"></div>
-                    <div clas="loader-txt">
+                    <div class="loader-txt">
                         <p>Finding your Pokemon!</p>
                     </div>
+                    <div id="name"></div>
+                    <div id="img"></div>
+                    <a name="" id="close" class="btn btn-info" role="button" data-dismiss="modal">Close</a>
                 </div>
             </div>
         </div>
